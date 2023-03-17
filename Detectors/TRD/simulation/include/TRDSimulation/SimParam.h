@@ -58,7 +58,12 @@ class SimParam
   void setPadResponse(bool flag = true) { mPRFOn = flag; }
   void setExB(bool flag = true) { mExBOn = flag; }
   void setSamplingFrequency(float freq) { mSamplingFrequency = freq; }
-  void setTRF(int trf, float mu=0., float sigma=0.3) { mTRF = trf; mMu = mu; mSigma = sigma;}
+  void setTRF(int trf, float mu = 0., float sigma = 0.3)
+  {
+    mTRF = trf;
+    mMu = mu;
+    mSigma = sigma;
+  }
 
   // Getters
   float getGasGain() const { return mGasGain; }
